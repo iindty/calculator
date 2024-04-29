@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: black;
+}
+
+#display {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border: 1px solid black;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 5rem;
+    background-color: #ffffff;
+}
+
+#button-calculator {
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(80px, auto) repeat(4, 80px);
+    gap: 0.2rem;
+}
+
+#zero {
+    grid-column-start: span 2;
+    grid-column-end: auto;
+}
+
+button {
+    font-size: 1.5rem;
+    border: none;
+}
+
+.clear, .sign, .percent {
+    background-color: #3b5daf;
+}
+
+.opertor, .equal {
+    background-color: #af3b4a;
+}
+
+.operand, .decimal {
+    background-color: #3baf69;
+}
+
+
+
